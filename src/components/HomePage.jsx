@@ -5,6 +5,8 @@ import ServicesSection from "./Home";
 import PropertySection from "./Property";
 import PlotsSection from "./Plots";
 import ContactUs from "./ContactUs";
+import Gallery from "./Gallery";
+import MeetOurTeam from "./MeetOurTeam";
 
 // A "Home" component that bundles your landing page sections
 const HomePage = () => (
@@ -13,6 +15,8 @@ const HomePage = () => (
     <ServicesSection />
     <PropertySection />
     <PlotsSection />
+    <MeetOurTeam />
+    <Gallery />
     <ContactUs />
   </>
 );
