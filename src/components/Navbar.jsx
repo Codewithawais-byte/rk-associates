@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: "Plots", href: "#plots" },
   { label: "Contact", href: "#contact" },
   { label: "All Listings", href: "/properties" },
+  { label: "Another", href: "/another" },
 ];
 
 export default function Navbar() {
