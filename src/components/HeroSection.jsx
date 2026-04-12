@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import Commercial from "../assets/Commercial.jpg";
 const STATS = [
   { value: "15+", label: "Years of Excellence" },
   { value: "2,400+", label: "Properties Sold" },
@@ -438,7 +438,7 @@ export default function HeroSection() {
                   style={{ width: 0 }}
                 />
                 <span className="hero-eyebrow-text">
-                  Karachi's Premier Real Estate
+                  Islamabad's Premier Real Estate
                 </span>
               </div>
 
@@ -500,14 +500,11 @@ export default function HeroSection() {
             <div className="hero-visual">
               {/* Main image card */}
               <div className="hero-card">
-                <img
-                  src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=85"
-                  alt="DHA Phase 6 Residence"
-                />
+                <img src={Commercial} alt="DHA Phase 6 Residence" />
                 <div className="prop-overlay">
                   <div className="prop-info">
                     <div className="prop-tag">Featured Listing</div>
-                    <div className="prop-name">DHA Phase 6 Residence</div>
+                    <div className="prop-name">TopCity-1</div>
                     <div className="prop-price">
                       PKR 4.5 Crore &mdash; 500 Sq Yd
                     </div>
@@ -525,29 +522,8 @@ export default function HeroSection() {
                   <span className="float-dot" />
                   New Listing
                 </div>
-                <div className="float-title">Gulshan-e-Iqbal</div>
+                <div className="float-title">TopCity-1</div>
                 <div className="float-sub">3 Bed Apartment</div>
-              </div>
-
-              {/* Left floating stat */}
-              <div className="hero-float-2">
-                <div className="float2-icon">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#C9A84C"
-                    strokeWidth="1.5"
-                  >
-                    <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                    <polyline points="9 22 9 12 15 12 15 22" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="float2-val">PKR 2Cr+</div>
-                  <div className="float2-label">Avg. listing value</div>
-                </div>
               </div>
             </div>
           </div>
