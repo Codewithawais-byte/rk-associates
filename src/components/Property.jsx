@@ -25,7 +25,6 @@ const LISTINGS = [
     area: "500 sq yd",
     tag: "For Sale",
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
-    featured: true,
   },
   {
     title: "Bahria Sky Tower",
@@ -148,13 +147,6 @@ export default function PropertySection() {
                   onMouseEnter={() => setHovered(title)}
                   onMouseLeave={() => setHovered(null)}
                 >
-                  {/* Featured Ribbon */}
-                  {featured && (
-                    <div className="absolute top-4 right-[-28px] bg-gradient-to-r from-[#C9A84C] to-[#E2C27D] text-[#0B1628] text-[10px] font-bold tracking-widest uppercase px-10 py-1 rotate-45 z-10 shadow-md">
-                      Featured
-                    </div>
-                  )}
-
                   {/* Image Container */}
                   <div className="relative h-[210px] overflow-hidden">
                     <img
