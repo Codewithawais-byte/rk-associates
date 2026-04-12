@@ -2,19 +2,12 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
-const gold = "#C9A84C";
-const goldLight = "#E2C27D";
-const goldFaint = "rgba(201,168,76,0.08)";
-const navy = "#0B1628";
-const navyMid = "#111E35";
-const textMuted = "#7A8BA8";
-const textLight = "#F0EEE9";
-
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
   { label: "Properties", href: "#properties" },
   { label: "Plots", href: "#plots" },
   { label: "Contact", href: "#contact" },
+  { label: "All Listings", href: "/properties" },
 ];
 
 export default function Navbar() {
@@ -46,9 +39,9 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map((l) => (
-              <a
+              <Link
                 key={l.label}
-                href={l.href}
+                to={l.href}
                 onClick={() => setActive(l.label)}
                 className={`relative px-5 py-2 text-sm font-medium tracking-widest uppercase transition-all duration-300 ${
                   active === l.label
@@ -62,7 +55,7 @@ export default function Navbar() {
                     active === l.label ? "w-6" : "w-0 group-hover:w-6"
                   }`}
                 />
-              </a>
+              </Link>
             ))}
           </div>
 

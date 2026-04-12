@@ -4,12 +4,13 @@ import HomePage from "./HomePage";
 import PropertySection from "./Property";
 import PlotsSection from "./Plots";
 import ContactUs from "./ContactUs";
+import PropertiesListings from "./PropertiesListings";
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/properties" element={<PropertySection />} />
+      <Route path="/properties" element={<PropertiesListings />} />
       <Route path="/plots" element={<PlotsSection />} />
       <Route path="/contact" element={<ContactUs />} />
       {/* Add a 404 catch-all if you like */}
