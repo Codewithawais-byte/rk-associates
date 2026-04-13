@@ -82,7 +82,7 @@ function Footer() {
             rights reserved.
           </p>
           <p className="text-[#8B99B5] text-[.7rem]">
-            Designed with ❤️ for Karachi's property seekers
+            Designed with ❤️ for Islamabad property seekers
           </p>
         </div>
       </div>
