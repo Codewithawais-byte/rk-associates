@@ -141,12 +141,12 @@ export default function PlotsSection() {
           </p>
 
           {/* City Filter Tabs */}
-          <div className="inline-flex border border-[#C9A84C]/30 mt-8 rounded-lg overflow-hidden">
+          <div className="flex overflow-x-auto whitespace-nowrap border border-[#C9A84C]/30 mt-8 rounded-lg scrollbar-hide">
             {CITIES.map((c) => (
               <button
                 key={c}
                 onClick={() => setCity(c)}
-                className={`px-8 py-3 text-xs font-medium tracking-[0.14em] uppercase transition-all ${
+                className={`shrink-0 px-8 py-3 text-xs font-medium tracking-[0.14em] uppercase transition-all ${
                   city === c
                     ? "bg-[#C9A84C] text-[#0B1628]"
                     : "text-[#55637B] hover:text-[#C9A84C] hover:bg-[#F5F0E6]"

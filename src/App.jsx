@@ -15,7 +15,7 @@ function App() {
         <AppRoutes />
       </main>
       <WhatsAppIcon />
-      {!isLandingPage && <Navbar />}
+      {!isLandingPage && <Footer />}
     </>
   );
 }
