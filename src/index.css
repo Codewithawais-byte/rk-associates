@@ -60,3 +60,13 @@ body {
   transform: scale(1.1);
   color: #fff;
 }
+/* In your index.css or App.css */
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

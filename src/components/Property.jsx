@@ -107,12 +107,12 @@ export default function PropertySection() {
             </div>
 
             {/* Filter Tabs */}
-            <div className="flex bg-white border border-[#C9A84C]/20 p-1 gap-1 w-fit rounded-xl shadow-sm">
+            <div className="flex bg-white border border-[#C9A84C]/20 p-1 gap-1 w-full sm:w-fit rounded-xl shadow-sm overflow-x-auto whitespace-nowrap scrollbar-hide">
               {CATS.map((c) => (
                 <button
                   key={c}
                   onClick={() => setFilter(c)}
-                  className={`px-6 py-3 text-xs font-medium tracking-[0.14em] uppercase transition-all rounded-lg ${
+                  className={`shrink-0 px-6 py-3 text-xs font-medium tracking-[0.14em] uppercase transition-all rounded-lg ${
                     filter === c
                       ? "bg-[#C9A84C] text-[#0B1628] shadow-sm"
                       : "text-[#55637B] hover:text-[#C9A84C] hover:bg-[#F8F5EF]"
