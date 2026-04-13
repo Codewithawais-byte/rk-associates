@@ -42,7 +42,7 @@ const PropertyDealerLanding = () => {
       </nav>
 
       {/* HERO */}
-      <section className="bg-[#0A0A0A] min-h-[560px] grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-12 py-20 max-w-7xl mx-auto">
+      <section className="bg-[#0A0A0A] min-h-[560px] grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-12 py-20  mx-auto">
         {/* Left */}
         <div>
           <div className="inline-flex items-center gap-2 bg-amber-600/10 border border-amber-600/30 text-amber-500 text-xs font-medium px-4 py-1.5 rounded-full mb-6 tracking-wider uppercase">
